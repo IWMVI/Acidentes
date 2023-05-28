@@ -5,7 +5,6 @@ public class Cidades {
 	Cidades[] cidades = new Cidades[10];
 	private String nome;
 	private int acidentes;
-	private double estatisticas;
 
 	public Cidades() {
 
@@ -24,7 +23,7 @@ public class Cidades {
 	}
 
 	public void setAcidente(int acidentes) {
-		this.acidentes = acidentes;
+		this.acidentes += acidentes;
 	}
 
 	public int getAcidentes() {

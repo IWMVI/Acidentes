@@ -87,6 +87,7 @@ public class Funcoes {
 			}
 
 			double media = (double) totAcidentes / totCidades;
+			System.out.println();
 			System.out.printf("Média: %.2f acidentes por cidade", media);
 			System.out.println("\n--------------\n");
 
@@ -96,6 +97,7 @@ public class Funcoes {
 			System.out.println("---- Gravação de Dados ----\n");
 			try {
 				System.out.print("Informe o nome do arquivo: ");
+				sc.nextLine();
 				String nomeArq = sc.nextLine();
 
 				FileWriter arquivo = new FileWriter(nomeArq + ".txt");
